@@ -1,0 +1,16 @@
+apiVersion: 1
+
+datasources:
+  - name: CloudWatch
+    type: cloudwatch
+    jsonData:
+      authType: credentials
+      defaultRegion: "eu-west-1"
+      profile: "058264198450_administrator-access"
+
+  - name: X-Ray
+    type: grafana-x-ray-datasource
+    jsonData:
+      authType: credentials
+      defaultRegion: "eu-west-1"
+      profile: "058264198450_administrator-access"
